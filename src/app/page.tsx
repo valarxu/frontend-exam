@@ -101,7 +101,7 @@ const modules: ModuleCard[] = [
     color: "bg-green-100 dark:bg-green-900/20 border-green-200 dark:border-green-800"
   },
   {
-    id: "testing",
+    id: "test",
     title: "测试",
     description: "单元测试、集成测试、E2E测试",
     icon: "🧪",

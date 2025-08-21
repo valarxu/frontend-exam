@@ -113,6 +113,82 @@ const moduleData: Record<string, ModuleInfo> = {
       { id: "9", title: "React 18 引入了哪些新特性？", difficulty: "hard", tags: ["React18", "并发渲染", "新特性"] },
       { id: "10", title: "React 的服务端渲染 (SSR) 和客户端渲染 (CSR) 的区别？", difficulty: "hard", tags: ["SSR", "CSR", "渲染模式"] }
     ]
+  },
+  browser: {
+    id: "browser",
+    title: "浏览器底层",
+    description: "浏览器渲染、事件循环、缓存机制",
+    icon: "🌐",
+    color: "bg-purple-100 dark:bg-purple-900/20 border-purple-200 dark:border-purple-800",
+    questions: [
+      { id: "1", title: "浏览器渲染流程？", difficulty: "easy", tags: ["渲染流程", "DOM", "CSSOM"] },
+      { id: "2", title: "重排（Reflow）与重绘（Repaint）区别？", difficulty: "medium", tags: ["重排", "重绘", "性能优化"] },
+      { id: "3", title: "什么是事件循环（Event Loop）？", difficulty: "medium", tags: ["事件循环", "异步", "宏任务"] },
+      { id: "4", title: "什么是回流优化？", difficulty: "medium", tags: ["回流优化", "性能", "DOM操作"] },
+      { id: "5", title: "浏览器缓存策略有哪些？", difficulty: "medium", tags: ["缓存", "HTTP", "性能优化"] },
+      { id: "6", title: "浏览器的垃圾回收机制？", difficulty: "medium", tags: ["垃圾回收", "内存管理", "V8"] },
+      { id: "7", title: "浏览器如何实现多进程架构？", difficulty: "hard", tags: ["多进程", "架构", "安全"] },
+      { id: "8", title: "什么是预加载（Preload）与预渲染（Prerender）？", difficulty: "hard", tags: ["预加载", "预渲染", "性能优化"] },
+      { id: "9", title: "什么是合成层（Composite Layer）？", difficulty: "hard", tags: ["合成层", "GPU加速", "渲染优化"] },
+      { id: "10", title: "浏览器中的安全沙箱机制？", difficulty: "hard", tags: ["安全", "沙箱", "隔离"] }
+    ]
+  },
+  typescript: {
+    id: "typescript",
+    title: "TypeScript",
+    description: "类型系统、泛型、工具类型",
+    icon: "🔷",
+    color: "bg-blue-100 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800",
+    questions: [
+      { id: "1", title: "TS 和 JS 区别？", difficulty: "easy", tags: ["TypeScript", "静态类型", "基础"] },
+      { id: "2", title: "TS 中的 interface 和 type 区别？", difficulty: "medium", tags: ["interface", "type", "类型定义"] },
+      { id: "3", title: "TS 的泛型是什么？", difficulty: "medium", tags: ["泛型", "类型参数", "复用"] },
+      { id: "4", title: "TS 中的 any、unknown、never 区别？", difficulty: "medium", tags: ["any", "unknown", "never"] },
+      { id: "5", title: "TS 中的交叉类型和联合类型？", difficulty: "medium", tags: ["交叉类型", "联合类型", "类型组合"] },
+      { id: "6", title: "TS 如何做类型守卫？", difficulty: "medium", tags: ["类型守卫", "类型检查", "安全"] },
+      { id: "7", title: "什么是声明文件（.d.ts）？", difficulty: "easy", tags: ["声明文件", "类型声明", "第三方库"] },
+      { id: "8", title: "TS 中的 utility types（工具类型）有哪些？", difficulty: "hard", tags: ["工具类型", "类型操作", "高级"] },
+      { id: "9", title: "TS 中的 keyof、typeof、in 用法？", difficulty: "hard", tags: ["keyof", "typeof", "in"] },
+      { id: "10", title: "TS 如何实现条件类型？", difficulty: "hard", tags: ["条件类型", "类型推断", "高级"] }
+    ]
+  },
+  nodejs: {
+    id: "nodejs",
+    title: "Node.js",
+    description: "服务端开发、事件循环、中间件",
+    icon: "🟢",
+    color: "bg-green-100 dark:bg-green-900/20 border-green-200 dark:border-green-800",
+    questions: [
+      { id: "1", title: "Node.js 的特点？", difficulty: "easy", tags: ["Node.js", "事件驱动", "非阻塞IO"] },
+      { id: "2", title: "CommonJS 与 ES Module 区别？", difficulty: "medium", tags: ["CommonJS", "ES Module", "模块系统"] },
+      { id: "3", title: "Node.js 的事件循环与浏览器有何不同？", difficulty: "hard", tags: ["事件循环", "微任务", "nextTick"] },
+      { id: "4", title: "什么是中间件？Express/Koa 如何实现？", difficulty: "medium", tags: ["中间件", "Express", "Koa"] },
+      { id: "5", title: "Node.js 如何处理高并发？", difficulty: "medium", tags: ["高并发", "事件循环", "Cluster"] },
+      { id: "6", title: "什么是 Stream？", difficulty: "medium", tags: ["Stream", "数据流", "管道"] },
+      { id: "7", title: "什么是 Buffer？", difficulty: "easy", tags: ["Buffer", "二进制", "内存"] },
+      { id: "8", title: "如何实现文件上传？", difficulty: "medium", tags: ["文件上传", "multipart", "multer"] },
+      { id: "9", title: "Node.js 如何连接数据库？", difficulty: "easy", tags: ["数据库", "MySQL", "MongoDB"] },
+      { id: "10", title: "如何做 Node.js 错误处理？", difficulty: "hard", tags: ["错误处理", "异常捕获", "进程守护"] }
+    ]
+  },
+  test: {
+    id: "test",
+    title: "测试",
+    description: "单元测试、集成测试、E2E测试",
+    icon: "🧪",
+    color: "bg-indigo-100 dark:bg-indigo-900/20 border-indigo-200 dark:border-indigo-800",
+    questions: [
+      { id: "1", title: "前端测试分类？", difficulty: "easy", tags: ["测试分类", "单元测试", "集成测试"] },
+      { id: "2", title: "常见的前端测试框架有哪些？", difficulty: "easy", tags: ["测试框架", "Jest", "Cypress"] },
+      { id: "3", title: "单元测试和集成测试区别？", difficulty: "easy", tags: ["单元测试", "集成测试", "测试策略"] },
+      { id: "4", title: "Jest 和 Mocha 区别？", difficulty: "medium", tags: ["Jest", "Mocha", "测试框架对比"] },
+      { id: "5", title: "什么是 Mock？", difficulty: "easy", tags: ["Mock", "测试隔离", "依赖注入"] },
+      { id: "6", title: "Cypress 和 Selenium 区别？", difficulty: "medium", tags: ["Cypress", "Selenium", "E2E测试"] },
+      { id: "7", title: "如何测试异步代码？", difficulty: "medium", tags: ["异步测试", "Promise", "async/await"] },
+      { id: "8", title: "如何测试 React 组件？", difficulty: "medium", tags: ["React测试", "Testing Library", "Enzyme"] },
+      { id: "9", title: "什么是快照测试（Snapshot Test）？", difficulty: "medium", tags: ["快照测试", "回归测试", "UI测试"] },
+      { id: "10", title: "前端测试在 CI/CD 中如何集成？", difficulty: "hard", tags: ["CI/CD", "自动化测试", "DevOps"] }
+    ]
   }
 };
 
@@ -198,7 +274,7 @@ const networkQuestions: Question[] = [
 const allModules = [
   "html", "css", "javascript", "react", "vue", "performance", 
   "network", "security", "engineering", "visualization", 
-  "browser", "typescript", "nodejs", "testing"
+  "browser", "typescript", "nodejs", "test"
 ];
 
 // 获取难度对应的样式
@@ -244,7 +320,7 @@ export default async function ModulePage({ params }: { params: Promise<{ id: str
     description: `${id}相关知识点和面试题目`,
     icon: "📚",
     color: "bg-gray-100 dark:bg-gray-900/20 border-gray-200 dark:border-gray-800",
-    questions: id === "performance" ? performanceQuestions : id === "network" ? networkQuestions : id === "security" ? securityQuestions : id === "engineering" ? engineeringQuestions : id === "visualization" ? visualizationQuestions : defaultQuestions
+    questions: defaultQuestions
   };
 
   return (
